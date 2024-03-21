@@ -1,28 +1,111 @@
-<UI version="4.0" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
  <class>MediaPlayerFFMepegClass</class>
- <widget class="QMainWindow" name="MediaPlayerFFMepegClass" >
-  <property name="objectName" >
-   <string notr="true">MediaPlayerFFMepegClass</string>
-  </property>
-  <property name="geometry" >
+ <widget class="QMainWindow" name="MediaPlayerFFMepegClass">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>793</width>
+    <height>454</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>MediaPlayerFFMepeg</string>
-  </property>  <widget class="QMenuBar" name="menuBar" />
-  <widget class="QToolBar" name="mainToolBar" />
-  <widget class="QWidget" name="centralWidget" />
-  <widget class="QStatusBar" name="statusBar" />
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>BaseInfo</string>
+       </attribute>
+       <widget class="QPushButton" name="btn_getProtocol">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>141</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>获得协议支持信息</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_getAVFormat">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>141</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>获得AVFormat信息</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_getAVCodeInfo">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>141</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>获得AVCodeInfo</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_getAVFilterInfo">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>141</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>获得AVFilterInfo信息</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btn_getConfiguration">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>130</y>
+          <width>141</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>获得配置信息</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
-   <include location="MediaPlayerFFMepeg.qrc"/>
+  <include location="MediaPlayerFFMepeg.qrc"/>
  </resources>
  <connections/>
-</UI>
+</ui>

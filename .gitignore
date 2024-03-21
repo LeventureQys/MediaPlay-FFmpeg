@@ -3,3 +3,9 @@ MediaPlayer--FFMepeg/.vs/MediaPlayer--FFMepeg/v17/Browse.VC.db
 MediaPlayer--FFMepeg/.vs/MediaPlayer--FFMepeg/v17/ipch/AutoPCH/f95c5e358fa89d83/MAIN.ipch
 *.ipch
 *.db
+*.db
+*.db
+*.vcxproj
+MediaPlayer--FFMepeg/MediaPlayer--FFMepeg/MediaPlayer--FFMepeg.vcxproj
+*.opendb
+*.vsidx

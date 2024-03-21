@@ -15,7 +15,7 @@ class BaseInfos : public QObject
 	Q_OBJECT
 
 public:
-	BaseInfos(QObject* parent);
+	BaseInfos(QObject* parent = nullptr);
 
 	/// <summary>
 	/// 协议支持信息
@@ -35,5 +35,16 @@ public:
 	/// <returns></returns>
 	QString getAVCodedInfo();
 
+	/// <summary>
+	/// 获得AVFilter信息
+	/// </summary>
+	/// <returns></returns>
+	QString getAVFilterInfo();
+
+	/// <summary>
+	/// 获得配置信息
+	/// </summary>
+	/// <returns></returns>
+	QString getConfigurationInfo();                  
 	~BaseInfos();
 };

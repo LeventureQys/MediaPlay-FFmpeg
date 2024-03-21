@@ -52,6 +52,7 @@ QString BaseInfos::getAVFormatInfo()
 	}
 
 	QString ret = QString::fromUtf8(info, 10000);
+	return ret;
 }
 
 QString BaseInfos::getAVCodedInfo()
@@ -64,23 +65,23 @@ QString BaseInfos::getAVCodedInfo()
 
 	while (codec_temp != nullptr) {
 		if (codec_temp->decode != nullptr) {
-			sprintf(info, "%s[Dec]", info);
+			sprintf(info, "%s[getAVCodedInfo -Dec]", info);
 		}
 		else {
-			sprintf(info, "%s[Enc]", info);
+			sprintf(info, "%s[getAVCodedInfo - Enc]", info);
 		}
 
 		switch (codec_temp->type) {
 		case AVMEDIA_TYPE_VIDEO: {
-			sprintf(info, "%s[Video]", info);
+			sprintf(info, "%s[getAVCodedInfo - Video]", info);
 			break;
 		}
 		case AVMEDIA_TYPE_AUDIO: {
-			sprintf(info, "%s[Audio]", info);
+			sprintf(info, "%s[getAVCodedInfo - Audio]", info);
 			break;
 		}
 		default: {
-			sprintf(info, "%s[Other]", info);
+			sprintf(info, "%s[getAVCodedInfo - Other]", info);
 			break;
 		}
 
@@ -89,6 +90,26 @@ QString BaseInfos::getAVCodedInfo()
 
 
 	return QString();
+}
+
+QString BaseInfos::getAVFilterInfo()
+{
+	char info[10000] = { 0 };
+	av_register_all();
+	AVFilter* filter = (AVFilter*)avfilter_next(nullptr);
+	while (filter != nullptr) {
+		sprintf(info, "%s[%10s]\n", info, filter->name);
+	}
+	QString ret = QString::fromUtf8(info);
+	return ret;
+}
+
+QString BaseInfos::getConfigurationInfo()
+{
+	char info[10000] = { 0 };
+	av_register_all();
+	sprintf(info, "%s\n", avcodec_configuration());
+	return QString::fromUtf8(info);
 }
 
 BaseInfos::~BaseInfos()
