@@ -57,12 +57,14 @@ QString BaseInfos::getAVFormatInfo()
 
 QString BaseInfos::getAVCodedInfo()
 {
-	char info[10000] = { 0 };
+	char info[50000] = { 0 };
 
 	avformat_network_init();
 
 	const AVCodec* codec_temp = nullptr;
-	while ((codec_temp = av_codec_iterate((void**) & codec_temp)) != nullptr) {
+	void* opaque = nullptr;
+	codec_temp = av_codec_iterate(&opaque);
+	while ((codec_temp = av_codec_iterate(&opaque)) != nullptr) {
 		const AVCodec* decoder = avcodec_find_decoder(codec_temp->id);
 		if (decoder != nullptr) {
 			sprintf(info, "%s[getAVCodedInfo -Dec]", info);
@@ -87,7 +89,7 @@ QString BaseInfos::getAVCodedInfo()
 		}
 	}
 
-	return QString::fromUtf8(info);
+	return QString::fromUtf8(info,50000);
 
 }
 
@@ -95,8 +97,10 @@ QString BaseInfos::getAVFilterInfo()
 {
 	char info[10000] = { 0 };
 	avformat_network_init();
-	const AVFilter* filter = (AVFilter*)av_filter_iterate(nullptr);
-	while (filter != nullptr) {
+	const AVFilter* filter = nullptr;
+	void* opaque = nullptr;
+	filter = av_filter_iterate(&opaque);
+	while ((filter = av_filter_iterate(&opaque)) != nullptr) {
 		sprintf(info, "%s[%10s]\n", info, filter->name);
 	}
 	QString ret = QString::fromUtf8(info);
