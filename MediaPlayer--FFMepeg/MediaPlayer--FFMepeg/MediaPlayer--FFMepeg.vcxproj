@@ -99,11 +99,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Modules\BaseInfos.cpp" />
     <QtRcc Include="MediaPlayerFFMepeg.qrc" />
     <QtUic Include="MediaPlayerFFMepeg.ui" />
     <QtMoc Include="MediaPlayerFFMepeg.h" />
     <ClCompile Include="MediaPlayerFFMepeg.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Modules\BaseInfos.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Modules\PublicHeader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
