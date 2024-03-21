@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\Modules\\BaseInfos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\Modules\\BaseInfos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0EA7341A-FB9F-4772-B614-77851D4DDDDF}|test_ffmpeg\\test_ffmpeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\test_ffmpeg\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0EA7341A-FB9F-4772-B614-77851D4DDDDF}|test_ffmpeg\\test_ffmpeg.vcxproj|solutionrelative:test_ffmpeg\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EA7341A-FB9F-4772-B614-77851D4DDDDF}|test_ffmpeg\\test_ffmpeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\test_ffmpeg\\test_ffmpeg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0EA7341A-FB9F-4772-B614-77851D4DDDDF}|test_ffmpeg\\test_ffmpeg.vcxproj|solutionrelative:test_ffmpeg\\test_ffmpeg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\PublicHeader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\Modules\\PublicHeader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\Modules\\BaseInfos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0273EF6B-D55C-4691-9F21-E31BB9687D97}|MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg.vcxproj|solutionrelative:MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,50 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MediaPlayerFFMepeg.h",
-              "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h",
-              "RelativeDocumentMoniker": "MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h",
-              "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h",
-              "RelativeToolTip": "MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-21T13:15:21.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BaseInfos.h",
-              "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.h",
-              "RelativeDocumentMoniker": "MediaPlayer--FFMepeg\\Modules\\BaseInfos.h",
-              "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.h*",
-              "RelativeToolTip": "MediaPlayer--FFMepeg\\Modules\\BaseInfos.h*",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC8AAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-21T12:55:33.6Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "BaseInfos.cpp",
               "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.cpp",
               "RelativeDocumentMoniker": "MediaPlayer--FFMepeg\\Modules\\BaseInfos.cpp",
               "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.cpp",
               "RelativeToolTip": "MediaPlayer--FFMepeg\\Modules\\BaseInfos.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8AAAAgAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFUAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-21T12:55:33.738Z",
+              "WhenOpened": "2024-03-21T13:33:48.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PublicHeader.h",
               "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\PublicHeader.h",
               "RelativeDocumentMoniker": "MediaPlayer--FFMepeg\\Modules\\PublicHeader.h",
@@ -81,20 +67,86 @@
               "RelativeToolTip": "MediaPlayer--FFMepeg\\Modules\\PublicHeader.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-03-21T12:55:33.5Z",
+              "WhenOpened": "2024-03-21T13:27:25.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "BaseInfos.h",
+              "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.h",
+              "RelativeDocumentMoniker": "MediaPlayer--FFMepeg\\Modules\\BaseInfos.h",
+              "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\Modules\\BaseInfos.h",
+              "RelativeToolTip": "MediaPlayer--FFMepeg\\Modules\\BaseInfos.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-21T13:18:00.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MediaPlayerFFMepeg.cpp",
+              "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.cpp",
+              "RelativeDocumentMoniker": "MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.cpp",
+              "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.cpp",
+              "RelativeToolTip": "MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-21T13:17:37.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\main.cpp",
               "RelativeDocumentMoniker": "MediaPlayer--FFMepeg\\main.cpp",
               "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\main.cpp",
               "RelativeToolTip": "MediaPlayer--FFMepeg\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-03-21T12:55:33.544Z"
+              "WhenOpened": "2024-03-21T12:55:33.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "test_ffmpeg.cpp",
+              "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\test_ffmpeg\\test_ffmpeg.cpp",
+              "RelativeDocumentMoniker": "test_ffmpeg\\test_ffmpeg.cpp",
+              "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\test_ffmpeg\\test_ffmpeg.cpp",
+              "RelativeToolTip": "test_ffmpeg\\test_ffmpeg.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-21T14:00:23.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\test_ffmpeg\\main.cpp",
+              "RelativeDocumentMoniker": "test_ffmpeg\\main.cpp",
+              "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\test_ffmpeg\\main.cpp",
+              "RelativeToolTip": "test_ffmpeg\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-21T14:02:11.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MediaPlayerFFMepeg.h",
+              "DocumentMoniker": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h",
+              "RelativeDocumentMoniker": "MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h",
+              "ToolTip": "D:\\Workshop\\Github\\MediaPlay-FFmpeg\\MediaPlayer--FFMepeg\\MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h",
+              "RelativeToolTip": "MediaPlayer--FFMepeg\\MediaPlayerFFMepeg.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-21T13:15:21.576Z",
+              "EditorCaption": ""
             }
           ]
         }

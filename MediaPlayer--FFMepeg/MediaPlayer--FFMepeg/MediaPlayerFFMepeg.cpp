@@ -42,4 +42,6 @@ void MediaPlayerFFMepeg::Add(const QString& message)
 
 void MediaPlayerFFMepeg::on_btn_getAVFormat_clicked()
 {
+	QString ret = this->info->getAVFormatInfo();
+	this->Add(ret);
 }

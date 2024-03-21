@@ -1,0 +1,44 @@
+﻿  Reading Qt configuration (E:/DevTools/Qt/5.14.2/5.14.2/msvc2017/bin/qmake)
+cl : 命令行  warning D9002: 忽略未知选项“/SAFESEH:NO”
+cl : 命令行  warning D9002: 忽略未知选项“/SAFESEH:NO”
+  test_ffmpeg.cpp
+cl : 命令行  warning D9002: 忽略未知选项“/SAFESEH:NO”
+  main.cpp
+D:\Workshop\Github\MediaPlay-FFmpeg\MediaPlayer--FFMepeg\test_ffmpeg\include\stdint.h(162,1): warning C4005: “SIZE_MAX”: 宏重定义
+  (编译源文件“main.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\limits.h(66,1):
+  参见“SIZE_MAX”的前一个定义
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\wchar.h(37,1): warning C4005: “WCHAR_MIN”: 宏重定义
+  (编译源文件“test_ffmpeg.cpp”)
+  D:\Workshop\Github\MediaPlay-FFmpeg\MediaPlayer--FFMepeg\test_ffmpeg\include\stdint.h(165,1):
+  参见“WCHAR_MIN”的前一个定义
+  
+D:\Workshop\Github\MediaPlay-FFmpeg\MediaPlayer--FFMepeg\test_ffmpeg\include\libavutil\rational.h(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  (编译源文件“main.cpp”)
+  
+cl : 命令行  warning D9002: 忽略未知选项“/SAFESEH:NO”
+  qrc_test_ffmpeg.cpp
+cl : 命令行  warning D9002: 忽略未知选项“/SAFESEH:NO”
+cl : 命令行  warning D9002: 忽略未知选项“/SAFESEH:NO”
+  moc_test_ffmpeg.cpp
+D:\Workshop\Github\MediaPlay-FFmpeg\MediaPlayer--FFMepeg\test_ffmpeg\include\stdint.h(162,1): warning C4005: “SIZE_MAX”: 宏重定义
+  (编译源文件“Debug/moc/moc_test_ffmpeg.cpp”)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\limits.h(66,1):
+  参见“SIZE_MAX”的前一个定义
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\wchar.h(37,1): warning C4005: “WCHAR_MIN”: 宏重定义
+  (编译源文件“Debug/moc/moc_test_ffmpeg.cpp”)
+  D:\Workshop\Github\MediaPlay-FFmpeg\MediaPlayer--FFMepeg\test_ffmpeg\include\stdint.h(165,1):
+  参见“WCHAR_MIN”的前一个定义
+  
+main.obj : error LNK2019: 无法解析的外部符号 _avcodec_configuration，函数 _main 中引用了该符号
+lib\avcodec.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+lib\avformat.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+lib\avutil.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+lib\avdevice.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+lib\avfilter.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+lib\postproc.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+lib\swresample.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+lib\swscale.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+D:\Workshop\Github\MediaPlay-FFmpeg\MediaPlayer--FFMepeg\Debug\test_ffmpeg.exe : fatal error LNK1120: 1 个无法解析的外部命令

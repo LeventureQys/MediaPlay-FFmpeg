@@ -1,0 +1,2 @@
+﻿C:\Users\Administrator\AppData\Local\QtMsBuild\qt_vars.targets(45,5): error : There's no Qt version assigned to project MediaPlayer--FFMepeg.vcxproj for configuration Release/x64.
+C:\Users\Administrator\AppData\Local\QtMsBuild\qt_vars.targets(45,5): error : Please set a Qt installation in 'Project|Properties|Configuration Properties|Qt Project Settings|Qt Installation'.
