@@ -27,7 +27,7 @@ int MediaPlay_Core::playVideo(const char* videopath)
 	AVFormatContext* ptr_formatCtx = nullptr;
 	struct SwsContext* ptr_swsCtx = nullptr;
 
-	this->videoUrl = QString::fromUtf8(videopath);
+	this->videoUrl = QString::fromLocal8Bit(videopath);
 
 	int width = 0;
 	int height = 0;
@@ -110,10 +110,17 @@ int MediaPlay_Core::playVideo(const char* videopath)
 			if (av_read_frame(ptr_formatCtx, ptr_avptr) >= 0) {	//读取一帧未解码的数据
 				//如果是视频数据
 				if (ptr_avptr->stream_index == (int)streamIndex) {
+					// 将数据发送给解码器进行解码
+					ret = avcodec_send_packet(ptr_avctx, ptr_avptr);
+					if (ret < 0) {
+						qDebug() << "发送数据包到解码器时发生错误: "<<ret;
+						continue; // 处理错误情况并继续读取下一帧数据
+					}
 					//解码一的视频数据
 					ret = avcodec_receive_frame(ptr_avctx, ptr_avframe);
 					if (ret == AVERROR(EAGAIN) || ret == AVERROR_EOF)
 					{
+						av_packet_unref(ptr_avptr); // 释放解码后的帧数据
 						continue; // 没有可解码的帧数据或者已经解码完毕，继续读取下一帧
 					}
 					if (ret < 0) {
@@ -123,13 +130,15 @@ int MediaPlay_Core::playVideo(const char* videopath)
 					// 处理解码后的图像帧
 					sws_scale(ptr_swsCtx, (const unsigned char* const*)ptr_avframe->data, ptr_avframe->linesize, 0, ptr_avctx->height, ptr_avframeRGB->data, ptr_avframeRGB->linesize);
 					if(this->callback != nullptr)
-						this->callback(ptr_avframeRGB->data[0], width, height);
+						this->callback((uchar*)ptr_avframeRGB->data[0], width, height);
 
 					av_frame_unref(ptr_avframe);
 				}
 
 			}
-
+			else {
+				break;
+			}
 		}
 		else if (this->state_playVideo == PlayState::Video_Finish)//播放结束
 		{
@@ -156,7 +165,7 @@ int MediaPlay_Core::playVideo(const char* videopath)
 void MediaPlay_Core::VideoPlayControl(bool blnPlay)
 {
 	if (blnPlay) {
-		if (this->state_playVideo == PlayState::Video_Finish) {
+		if (this->state_playVideo != PlayState::Video_Playing) {
 			this->state_playVideo = PlayState::Video_Playing;
 			playVideo(this->videoUrl.toLocal8Bit().data());
 		}
