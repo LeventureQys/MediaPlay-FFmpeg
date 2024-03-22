@@ -62,19 +62,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
-    <ReferencePath>D:\Workshop\Github\MediaPlay-FFmpeg\MediaPlayer--FFMepeg\MediaPlayer--FFMepeg\lib;$(ReferencePath)</ReferencePath>
-    <LibraryPath>D:\Workshop\Github\MediaPlay-FFmpeg\MediaPlayer--FFMepeg\MediaPlayer--FFMepeg\lib;$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>ffmpeg-dependency/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(Qt_DEFINES_);%(PreprocessorDefinitions);WIN32;_DEBUG;_CONSOLE;__STDC_LIMIT_MACROS</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>avcodec.lib;avformat.lib;avutil.lib;avdevice.lib;avfilter.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>./lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>ffmpeg-dependency/lib</AdditionalLibraryDirectories>
       <TargetMachine>MachineX64</TargetMachine>
     </Link>
   </ItemDefinitionGroup>
@@ -106,7 +106,7 @@
     <ClCompile Include="src\BaseInfos.cpp" />
     <QtRcc Include="MediaPlayerFFMepeg.qrc" />
     <QtUic Include="MediaPlayerFFMepeg.ui" />
-    <QtMoc Include="MediaPlayerFFMepeg.h" />
+    <QtMoc Include="include\MediaPlayerFFMepeg.h" />
     <ClCompile Include="src\MediaPlayerFFMepeg.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
@@ -114,7 +114,7 @@
     <QtMoc Include="include\BaseInfos.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Modules\PublicHeader.h" />
+    <ClInclude Include="include\PublicHeader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

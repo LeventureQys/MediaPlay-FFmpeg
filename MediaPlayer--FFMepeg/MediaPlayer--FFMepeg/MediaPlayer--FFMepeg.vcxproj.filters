@@ -29,7 +29,7 @@
     <QtUic Include="MediaPlayerFFMepeg.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtMoc Include="MediaPlayerFFMepeg.h">
+    <QtMoc Include="include\MediaPlayerFFMepeg.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <ClCompile Include="src\MediaPlayerFFMepeg.cpp">
@@ -50,7 +50,7 @@
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Modules\PublicHeader.h">
+    <ClInclude Include="include\PublicHeader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
