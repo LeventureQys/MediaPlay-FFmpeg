@@ -2,11 +2,19 @@
 #include <stdio.h>
 #include <Windows.h>
 //Windows
+//包含了一些ffmpeg相关的头文件和lib文件的引用
 extern "C"
 {
 #include "libavcodec/avcodec.h"
 #include "libavformat/avformat.h"
 #include "libavfilter/avfilter.h"
+#include "libswscale/swscale.h"
+#include "libavdevice/avdevice.h"
+#include "libavformat/version.h"
+#include "libavutil/time.h"
+#include "libavutil//mathematics.h"
+#include "libavutil/imgutils.h"
+
 };
 
 

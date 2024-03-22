@@ -43,6 +43,9 @@
     <ClCompile Include="src\BaseInfos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\MediaPlay_Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="include\BaseInfos.h">
@@ -51,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\PublicHeader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MediaPlay_Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

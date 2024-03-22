@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>793</width>
-    <height>454</height>
+    <width>1245</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -94,6 +94,109 @@
        <attribute name="title">
         <string>Tab 2</string>
        </attribute>
+       <widget class="QWidget" name="wid_mediaplayer" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>587</width>
+          <height>535</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>71</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>选择...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>20</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>播放</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>20</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>关闭视频</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="comboBox">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>20</y>
+          <width>69</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;播放速度&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>1x</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1.5x</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2x</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2.5x</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3x</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>20</y>
+          <width>160</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;音量&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>

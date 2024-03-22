@@ -11,10 +11,12 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QWidget>
 
@@ -33,13 +35,19 @@ public:
     QPushButton *btn_getAVFilterInfo;
     QPushButton *btn_getConfiguration;
     QWidget *tab_2;
+    QWidget *wid_mediaplayer;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
+    QComboBox *comboBox;
+    QSlider *horizontalSlider;
     QPlainTextEdit *plainTextEdit;
 
     void setupUi(QMainWindow *MediaPlayerFFMepegClass)
     {
         if (MediaPlayerFFMepegClass->objectName().isEmpty())
             MediaPlayerFFMepegClass->setObjectName(QString::fromUtf8("MediaPlayerFFMepegClass"));
-        MediaPlayerFFMepegClass->resize(793, 454);
+        MediaPlayerFFMepegClass->resize(1245, 650);
         centralWidget = new QWidget(MediaPlayerFFMepegClass);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         horizontalLayout = new QHBoxLayout(centralWidget);
@@ -68,6 +76,30 @@ public:
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        wid_mediaplayer = new QWidget(tab_2);
+        wid_mediaplayer->setObjectName(QString::fromUtf8("wid_mediaplayer"));
+        wid_mediaplayer->setGeometry(QRect(10, 60, 587, 535));
+        pushButton = new QPushButton(tab_2);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setGeometry(QRect(10, 20, 71, 23));
+        pushButton_2 = new QPushButton(tab_2);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setGeometry(QRect(90, 20, 75, 23));
+        pushButton_3 = new QPushButton(tab_2);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(170, 20, 75, 23));
+        comboBox = new QComboBox(tab_2);
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+        comboBox->setGeometry(QRect(260, 20, 69, 22));
+        horizontalSlider = new QSlider(tab_2);
+        horizontalSlider->setObjectName(QString::fromUtf8("horizontalSlider"));
+        horizontalSlider->setGeometry(QRect(350, 20, 160, 22));
+        horizontalSlider->setOrientation(Qt::Horizontal);
         tabWidget->addTab(tab_2, QString());
 
         horizontalLayout->addWidget(tabWidget);
@@ -81,7 +113,7 @@ public:
 
         retranslateUi(MediaPlayerFFMepegClass);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MediaPlayerFFMepegClass);
@@ -96,6 +128,21 @@ public:
         btn_getAVFilterInfo->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227AVFilterInfo\344\277\241\346\201\257", nullptr));
         btn_getConfiguration->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227\351\205\215\347\275\256\344\277\241\346\201\257", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MediaPlayerFFMepegClass", "BaseInfo", nullptr));
+        pushButton->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\351\200\211\346\213\251...", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\346\222\255\346\224\276", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\345\205\263\351\227\255\350\247\206\351\242\221", nullptr));
+        comboBox->setItemText(0, QCoreApplication::translate("MediaPlayerFFMepegClass", "1x", nullptr));
+        comboBox->setItemText(1, QCoreApplication::translate("MediaPlayerFFMepegClass", "1.5x", nullptr));
+        comboBox->setItemText(2, QCoreApplication::translate("MediaPlayerFFMepegClass", "2x", nullptr));
+        comboBox->setItemText(3, QCoreApplication::translate("MediaPlayerFFMepegClass", "2.5x", nullptr));
+        comboBox->setItemText(4, QCoreApplication::translate("MediaPlayerFFMepegClass", "3x", nullptr));
+
+#if QT_CONFIG(whatsthis)
+        comboBox->setWhatsThis(QCoreApplication::translate("MediaPlayerFFMepegClass", "<html><head/><body><p>\346\222\255\346\224\276\351\200\237\345\272\246</p></body></html>", nullptr));
+#endif // QT_CONFIG(whatsthis)
+#if QT_CONFIG(whatsthis)
+        horizontalSlider->setWhatsThis(QCoreApplication::translate("MediaPlayerFFMepegClass", "<html><head/><body><p>\351\237\263\351\207\217</p></body></html>", nullptr));
+#endif // QT_CONFIG(whatsthis)
         tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MediaPlayerFFMepegClass", "Tab 2", nullptr));
     } // retranslateUi
 

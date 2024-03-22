@@ -103,6 +103,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\MediaPlay_Core.cpp" />
     <ClCompile Include="src\BaseInfos.cpp" />
     <QtRcc Include="MediaPlayerFFMepeg.qrc" />
     <QtUic Include="MediaPlayerFFMepeg.ui" />
@@ -115,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\PublicHeader.h" />
+    <ClInclude Include="include\MediaPlay_Core.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
