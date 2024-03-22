@@ -38,7 +38,7 @@
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
-    <QtInstall>5.12.12_msvc2017_64</QtInstall>
+    <QtInstall>5.14.2_msvc2017_64</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
@@ -103,15 +103,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Modules\BaseInfos.cpp" />
+    <ClCompile Include="src\BaseInfos.cpp" />
     <QtRcc Include="MediaPlayerFFMepeg.qrc" />
     <QtUic Include="MediaPlayerFFMepeg.ui" />
     <QtMoc Include="MediaPlayerFFMepeg.h" />
-    <ClCompile Include="MediaPlayerFFMepeg.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\MediaPlayerFFMepeg.cpp" />
+    <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="Modules\BaseInfos.h" />
+    <QtMoc Include="include\BaseInfos.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Modules\PublicHeader.h" />

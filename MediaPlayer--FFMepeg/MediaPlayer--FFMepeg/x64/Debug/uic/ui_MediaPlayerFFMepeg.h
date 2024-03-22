@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'MediaPlayerFFMepeg.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.12
+** Created by: Qt User Interface Compiler version 5.14.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -89,14 +89,14 @@ public:
 
     void retranslateUi(QMainWindow *MediaPlayerFFMepegClass)
     {
-        MediaPlayerFFMepegClass->setWindowTitle(QApplication::translate("MediaPlayerFFMepegClass", "MediaPlayerFFMepeg", nullptr));
-        btn_getProtocol->setText(QApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227\345\215\217\350\256\256\346\224\257\346\214\201\344\277\241\346\201\257", nullptr));
-        btn_getAVFormat->setText(QApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227AVFormat\344\277\241\346\201\257", nullptr));
-        btn_getAVCodeInfo->setText(QApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227AVCodeInfo", nullptr));
-        btn_getAVFilterInfo->setText(QApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227AVFilterInfo\344\277\241\346\201\257", nullptr));
-        btn_getConfiguration->setText(QApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227\351\205\215\347\275\256\344\277\241\346\201\257", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MediaPlayerFFMepegClass", "BaseInfo", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MediaPlayerFFMepegClass", "Tab 2", nullptr));
+        MediaPlayerFFMepegClass->setWindowTitle(QCoreApplication::translate("MediaPlayerFFMepegClass", "MediaPlayerFFMepeg", nullptr));
+        btn_getProtocol->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227\345\215\217\350\256\256\346\224\257\346\214\201\344\277\241\346\201\257", nullptr));
+        btn_getAVFormat->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227AVFormat\344\277\241\346\201\257", nullptr));
+        btn_getAVCodeInfo->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227AVCodeInfo", nullptr));
+        btn_getAVFilterInfo->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227AVFilterInfo\344\277\241\346\201\257", nullptr));
+        btn_getConfiguration->setText(QCoreApplication::translate("MediaPlayerFFMepegClass", "\350\216\267\345\276\227\351\205\215\347\275\256\344\277\241\346\201\257", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MediaPlayerFFMepegClass", "BaseInfo", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MediaPlayerFFMepegClass", "Tab 2", nullptr));
     } // retranslateUi
 
 };

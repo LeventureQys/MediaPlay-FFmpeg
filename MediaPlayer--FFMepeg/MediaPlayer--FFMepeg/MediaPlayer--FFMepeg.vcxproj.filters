@@ -32,20 +32,20 @@
     <QtMoc Include="MediaPlayerFFMepeg.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <ClCompile Include="MediaPlayerFFMepeg.cpp">
+    <ClCompile Include="src\MediaPlayerFFMepeg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Modules\BaseInfos.cpp">
+    <ClCompile Include="src\BaseInfos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="Modules\BaseInfos.h">
+    <QtMoc Include="include\BaseInfos.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
