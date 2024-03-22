@@ -21,7 +21,7 @@ int MediaPlay_Core::playVideo(const char* videopath)
 	unsigned int streamIndex = 0;
 
 	const AVCodec* ptr_codec = nullptr;
-	AVPacket* ptr_avptr = nullptr;
+	AVPacket* ptr_avpkg = nullptr;
 	AVCodecContext* ptr_avctx = nullptr;
 	AVFrame* ptr_avframe, * ptr_avframeRGB = nullptr;
 	AVFormatContext* ptr_formatCtx = nullptr;
@@ -86,8 +86,8 @@ int MediaPlay_Core::playVideo(const char* videopath)
 		return -5;
 	}
 
-	//初始化ptr_avptr
-	ptr_avptr = (AVPacket*)av_malloc(sizeof(AVPacket));
+	//初始化ptr_avpkg
+	ptr_avpkg = (AVPacket*)av_malloc(sizeof(AVPacket));
 
 	//初始化数据帧空间
 	ptr_avframe = av_frame_alloc();
@@ -107,20 +107,20 @@ int MediaPlay_Core::playVideo(const char* videopath)
 	//尝试循环读取视频数据
 	while (true) {
 		if (this->state_playVideo == PlayState::Video_Playing) { // 正在播放
-			if (av_read_frame(ptr_formatCtx, ptr_avptr) >= 0) {	//读取一帧未解码的数据
+			if (av_read_frame(ptr_formatCtx, ptr_avpkg) >= 0) {	//读取一帧未解码的数据
 				//如果是视频数据
-				if (ptr_avptr->stream_index == (int)streamIndex) {
+				if (ptr_avpkg->stream_index == (int)streamIndex) {
 					// 将数据发送给解码器进行解码
-					ret = avcodec_send_packet(ptr_avctx, ptr_avptr);
+					ret = avcodec_send_packet(ptr_avctx, ptr_avpkg);
 					if (ret < 0) {
 						qDebug() << "发送数据包到解码器时发生错误: "<<ret;
 						continue; // 处理错误情况并继续读取下一帧数据
 					}
-					//解码一的视频数据
+					//解码视频数据
 					ret = avcodec_receive_frame(ptr_avctx, ptr_avframe);
 					if (ret == AVERROR(EAGAIN) || ret == AVERROR_EOF)
 					{
-						av_packet_unref(ptr_avptr); // 释放解码后的帧数据
+						av_packet_unref(ptr_avpkg); // 释放解码后的帧数据
 						continue; // 没有可解码的帧数据或者已经解码完毕，继续读取下一帧
 					}
 					if (ret < 0) {
