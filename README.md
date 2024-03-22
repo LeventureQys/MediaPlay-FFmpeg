@@ -6,4 +6,4 @@ Visual Studio 2022 + Qt 5.14.2 + ffmpeg 59
 
 [[音视频学习笔记]六、自制音视频播放器Part1 -新版本ffmpeg，Qt +VS2022，都什么年代了还在写传统播放器？](https://blog.csdn.net/Andius/article/details/136923005?spm=1001.2014.3001.5502)
 
-[[音视频学习笔记]六、自制音视频播放器Part1 -新版本ffmpeg，Qt +VS2022，都什么年代了还在写传统播放器？]([https://blog.csdn.net/Andius/article/details/136923005?spm=1001.2014.3001.5502](https://blog.csdn.net/Andius/article/details/136928686?spm=1001.2014.3001.5502)https://blog.csdn.net/Andius/article/details/136928686?spm=1001.2014.3001.5502)
+[[音视频学习笔记]七、自制音视频播放器Part2 - VS + Qt +FFmpeg 写一个简单的视频播放器]([https://blog.csdn.net/Andius/article/details/136923005?spm=1001.2014.3001.5502](https://blog.csdn.net/Andius/article/details/136928686?spm=1001.2014.3001.5502)
